@@ -1,0 +1,126 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin: 30px 0;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* "로그인" 버튼 스타일 */
+input[type="submit"] {
+    background-color: #35424a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e8491d;
+}
+
+/* "돌아가기" 버튼 스타일 */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #35424a;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e8491d;
+}
+
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    overflow-x: auto;
+    text-align: left; /* 코드 블록의 텍스트를 왼쪽으로 정렬 */
+}
+
+.results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.results p {
+    font-size: 16px;
+    color: #333;
+}
+
+p strong {
+    color: #e8491d; /* 강조 텍스트의 색상을 강조 */
+}
+
+.bottom {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}
+.bottom p {
+   color: #f8f8f2; /* 흰색 글자색 */
+   font-size: 16px;
+}
+
+
+

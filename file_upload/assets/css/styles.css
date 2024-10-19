@@ -1,0 +1,379 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header ul li a:hover {
+    color: #cccccc;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* 버튼 스타일 업데이트 */
+.attack-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #466d6d; /* 메인 버튼 배경 색상 */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px; /* 둥근 모서리 */
+    font-size: 18px; /* 큰 글꼴 크기 */
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.attack-button:hover {
+    background-color: #bbcbd2; /* 호버 시 색상 */
+    transform: translateY(-2px); /* 호버 시 버튼이 살짝 올라감 */
+}
+
+/* 파일 업로드 폼 스타일링 */
+form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input[type="file"] {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+/* 제출 버튼 (Upload File 버튼) 스타일 */
+form input[type="submit"] {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #466d6d; /* 제출 버튼 배경 색상 */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* 둥근 모서리 */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 부드러운 전환 효과 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+form input[type="submit"]:hover {
+    background-color: #bbcbd2; /* 호버 시 색상 */
+    transform: translateY(-2px); /* 호버 시 버튼이 살짝 올라감 */
+}
+
+/* 파일 업로드 성공/실패 메시지 */
+.file-info, .error-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #b0c4c4; /* 기본 배경색 */
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.file-info {
+    background-color: #b0c4c4; /* 성공 메시지 배경 색상 */
+    color: #ffffff; /* 성공 메시지 텍스트 색상 */
+}
+
+.error-message {
+    background-color: #bbcbd2; /* 에러 메시지 배경 색상 */
+    color: #ffffff; /* 에러 메시지 텍스트 색상 */
+}
+
+.file-info h3, .error-message h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* FileUploadVuln.php 스타일 */
+.vuln-container {
+    background-color: #ffffff; /* 배경 색상 */
+    padding: 20px;
+    border-radius: 8px; /* px가 빠졌던 부분 수정 */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    margin-top: 20px;
+}
+
+.vuln-container h2 {
+    color: #466d6d; /* 메인 색상 */
+    font-size: 24px;
+    border-bottom: 2px solid #bbcbd2; /* 하단 경계선 */
+    padding-bottom: 10px;
+}
+
+.vuln-container h3 {
+    color: #35424a; /* 어두운 색상 */
+    margin-top: 20px;
+}
+
+.vuln-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.vuln-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.vuln-container ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.vuln-container strong {
+    color: #466d6d; /* 강조 색상 */
+}
+
+/* 설명 부분 스타일링 추가 */
+.explanation-container {
+    background-color: #ffffff; /* 배경색 */
+    padding: 30px; /* 안쪽 여백 */
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 효과 강화 */
+    margin-top: 20px;
+    margin-bottom: 30px; /* 하단 여백 추가 */
+}
+
+.explanation-container h2, .explanation-container h3 {
+    color: #466d6d; /* 제목 색상 */
+    font-weight: bold; /* 두꺼운 폰트 */
+    border-bottom: 2px solid #bbcbd2; /* 하단 경계선 */
+    padding-bottom: 10px; /* 하단 여백 */
+    margin-bottom: 20px; /* 제목과 내용 간격 */
+}
+
+.explanation-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.explanation-container ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Test Now 버튼 중앙 정렬 */
+.action {
+    text-align: center;
+    margin-top: 30px; /* 상단 여백 */
+}
+
+.attack-button {
+    background-color: #466d6d; /* 버튼 배경 색상 */
+    color: white; /* 텍스트 색상 */
+    padding: 15px 30px; /* 버튼 크기 증가 */
+    font-size: 18px; /* 글꼴 크기 */
+    border-radius: 8px; /* 둥근 모서리 */
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 전환 효과 */
+}
+
+.attack-button:hover {
+    background-color: #bbcbd2; /* 호버 시 색상 */
+    transform: translateY(-3px); /* 호버 시 살짝 위로 이동 */
+}
+
+
+/* 취약 코드 섹션 스타일링 */
+.vulnerable-code {
+    display: none; /* 초기에는 숨김 */
+    background-color: #f8f9fa; /* 연한 배경 */
+    border: 1px solid #ddd; /* 테두리 */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: Consolas, monospace; /* 코드 폰트 */
+    white-space: pre-wrap; /* 줄바꿈 유지 */
+    line-height: 1.5;
+}
+
+/*upload_test.php 스타일*/
+/* 중앙에 배치된 버튼 */
+.action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Show/Hide 버튼 스타일 (작고 어두운 색상) */
+.toggle-button {
+    background-color: #333; /* 더 어두운 버튼 배경 색상 */
+    color: white;
+    padding: 8px 16px; /* 크기를 더 작게 설정 */
+    text-decoration: none;
+    border-radius: 6px; /* 둥근 모서리 */
+    font-size: 14px; /* 글꼴 크기를 줄임 */
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 부드러운 전환 효과 */
+    display: inline-block;
+}
+
+.toggle-button:hover {
+    background-color: #555; /* 호버 시 더 어두운 색상 */
+    transform: translateY(-2px); /* 호버 시 버튼이 살짝 올라감 */
+}
+
+/* 취약 코드 섹션 스타일링 */
+.vulnerable-code {
+    display: none; /* 초기에는 숨김 */
+    background-color: #2d2d2d; /* 검정 배경 */
+    border: 1px solid #444; /* 어두운 테두리 */
+    padding: 10px; /* 상하 여백을 줄임 */
+    margin-top: 20px;
+    border-radius: 8px; /* 둥근 모서리 */
+    font-family: 'Fira Code', Monaco, 'Courier New', monospace; /* 코드 폰트 */
+    white-space: pre-wrap; /* 줄바꿈 유지 */
+    line-height: 1.4; /* 줄 간격을 줄임 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
+    color: #f8f8f2; /* 기본 텍스트 색상 */
+    overflow: auto; /* 코드 내용이 길면 스크롤 추가 */
+}
+
+.vulnerable-code h3 {
+    color: #66d9ef; /* 제목 색상 */
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444; /* 경계선 색상 변경 */
+    padding-bottom: 8px; /* 하단 여백을 줄임 */
+}
+
+/* 코드 구문 강조 스타일 */
+.prettyprint {
+    color: #f8f8f2; /* 기본 텍스트 색상 */
+}
+
+.prettyprint .comment { color: #75715e; }
+.prettyprint .keyword { color: #66d9ef; }
+.prettyprint .string { color: #e6db74; }
+.prettyprint .number { color: #ae81ff; }
+.prettyprint .variable { color: #a6e22e; }
+.prettyprint .function { color: #dcdcaa; }
+
+
+/*upload_test2 스타일*/
+/* 추가된 "Test Level 2" 버튼 스타일 */
+.attack-button {
+    background-color: #466d6d; /* 기존 스타일 유지 */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.attack-button:hover {
+    background-color: #bbcbd2;
+    transform: translateY(-3px);
+}
+
+/* 취약 코드 토글 버튼 스타일 */
+.toggle-button {
+    background-color: #333; /* 어두운 배경 */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.toggle-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* 취약 코드 섹션 스타일 */
+.vulnerable-code {
+    display: none; /* 초기에는 숨김 */
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-family: 'Fira Code', Monaco, 'Courier New', monospace;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: #f8f8f2;
+    overflow: auto;
+}
+
+.vulnerable-code h3 {
+    color: #66d9ef;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+}
+
